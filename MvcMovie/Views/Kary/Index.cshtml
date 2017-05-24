@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MvcMovie.Models.Kary>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_SPOTKANIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_DRUZYNY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MINUTA_KARY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KARA)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_SPOTKANIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_DRUZYNY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MINUTA_KARY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KARA)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_PILKARZA }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_PILKARZA }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_PILKARZA })
+        </td>
+    </tr>
+}
+
+</table>

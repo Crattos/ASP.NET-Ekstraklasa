@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Movie App</title>
+    <title>@ViewBag.Title - Ekstraklasa</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -17,13 +17,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("MVC Movie", "Index", "Movies", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Ekstraklasa", "Index", "Druzyny", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Miasta", "Index", "Miasta")</li>
+                    <li>@Html.ActionLink("Druzyny", "Index", "Druzyny")</li>
+                    <li>@Html.ActionLink("Pilkarze", "Index", "Pilkarze")</li>
+                    <li>@Html.ActionLink("Trenerzy", "Index", "Trenerzy")</li>
+                    <li>@Html.ActionLink("Sedziowie", "Index", "Sedziowie")</li>
+                    <li>@Html.ActionLink("Spotkania", "Index", "Spotkania")</li>
+                    <li>@Html.ActionLink("Wynik", "Index", "Wynik")</li>
+                    <li>@Html.ActionLink("Kary", "Index", "Kary")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MvcMovie.Models.Wynik>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_DRUZYNY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_PILKARZA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MINUTA_WYNIKU)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_DRUZYNY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_PILKARZA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MINUTA_WYNIKU)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_SPOTKANIA }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_SPOTKANIA }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_SPOTKANIA })
+        </td>
+    </tr>
+}
+
+</table>

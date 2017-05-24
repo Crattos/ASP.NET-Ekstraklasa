@@ -4,10 +4,10 @@ using System.Data.Entity;
 
 namespace MvcMovie.Models
 {
-    public class Miasto
+    public class Miasta
     {
         [Key]
-        public int ID{ get; set; }
+        public int ID_MIASTA{ get; set; }
         public string NAZWA_MIASTA { get; set; }
     }
 

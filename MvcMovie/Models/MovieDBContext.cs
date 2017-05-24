@@ -15,13 +15,13 @@ namespace MvcMovie.Models
         }
 
         public DbSet<Movie> Movies { get; set; }
-        public DbSet<Miasto> MIASTA { get; set; }
-        public DbSet<Druzyna> DRUZYNY { get; set; }
-        public DbSet<Kara> KARY { get; set; }
-        public DbSet<Pilkarz> PILKARZE { get; set; }
-        public DbSet<Sedzia> SEDZIOWIE { get; set; }
-        public DbSet<Spotkanie> SPOTKANIA { get; set; }
-        public DbSet<Trener> TRENERZY { get; set; }
+        public DbSet<Miasta> MIASTA { get; set; }
+        public DbSet<Druzyny> DRUZYNY { get; set; }
+        public DbSet<Kary> KARY { get; set; }
+        public DbSet<Pilkarze> PILKARZE { get; set; }
+        public DbSet<Sedziowie> SEDZIOWIE { get; set; }
+        public DbSet<Spotkania> SPOTKANIA { get; set; }
+        public DbSet<Trenerzy> TRENERZY { get; set; }
         public DbSet<Wynik> WYNIK { get; set; }
   
     }

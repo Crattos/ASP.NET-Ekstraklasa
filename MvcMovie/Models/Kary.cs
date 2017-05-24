@@ -2,7 +2,7 @@
 
 namespace MvcMovie.Models
 {
-    public class Kara
+    public class Kary
     {
         public int ID_SPOTKANIA { get; set; }
         public int ID_DRUZYNY { get; set; }

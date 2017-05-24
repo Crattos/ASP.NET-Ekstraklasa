@@ -2,7 +2,7 @@
 
 namespace MvcMovie.Models
 {
-    public class Sedzia
+    public class Sedziowie
     {
         [Key]
         public int ID_SEDZI{ get; set; }
